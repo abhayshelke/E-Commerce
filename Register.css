@@ -1,0 +1,280 @@
+*{padding: 0;margin: 0;box-sizing: border-box;}
+body{
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    
+    
+}
+:root{
+    --primary:indianred;
+    --secondary:rgba(15,10,29,0.849);
+    --light:#2f3640;
+
+}
+header{
+    width: 100%;
+    height: 100%;
+}
+.nav1{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow:2px 0px 3px red;
+    text-align: center;
+}
+.nav1 .left{
+    flex-basis: 50%;
+    letter-spacing: 2px;
+}
+.nav1 .left a{
+    text-decoration: none;
+    color: darkred;
+    font-weight: bold;
+    margin: 0px 5px;
+}
+.right{
+    flex-basis: 50%;
+}
+.right i1{
+    font-size: 20px;
+    margin: 0px 15px;
+    background-color:#3b5998 ;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.nav1 .right i1:hover{
+    transform:rotate(360deg);
+}
+.right i2{
+    font-size: 20px;
+    margin: 0px 15px;
+    background-color:#25D366;
+
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.nav1 .right i2:hover{
+    transform:rotate(360deg);
+}
+.right i3{
+    font-size: 20px;
+    margin: 0px 15px;
+    background-color:#e84393 ;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.nav1 .right i3:hover{
+    transform:rotate(360deg);
+}
+.right i4{
+    font-size: 20px;
+    margin: 0px 15px;
+    background-color:#1DA1F2 ;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.nav1 .right i4:hover{
+    transform:rotate(360deg);
+}
+.nav2 {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.nav2 .nav2-left,.nav2 .nav2-center,.nav2 .nav2-right {
+    flex-basis: 30%;
+    margin: auto;
+    cursor: pointer;
+}
+.nav2 .nav2-center {
+    margin-left: 15px;
+}
+.nav2 .nav2-center h1{
+    color: var(--primary);
+    font-size: 2rem;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+.nav2 .nav2-center h1 span{
+    color: var(--secondary);
+}
+.nav2 .nav2-center p{
+    color:gray;
+    font-size: 15px;
+    margin-top: 5px;
+}
+.nav2 .nav2-right i{
+    margin:0px 5px;
+}
+.nav3 {
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+}
+.nav3 ul {
+    list-style: none;
+    text-align: center;
+
+}
+.nav3 ul li {
+    display: inline-block;
+    width: 150px;
+    position:relative;
+    z-index: 99;
+}
+.nav3 ul li a{
+
+    text-decoration: none;
+    
+    color: black;
+    
+    font-weight: 500;
+    
+    display: block;
+    
+}
+.nav3 ul li a:hover{
+    
+    color: var(--primary);
+    
+}
+    
+.nav3 ul li i{
+    
+    color: var(--primary);
+    
+    margin: 0px 5px;
+}
+.nav3 ul ul {
+    position: absolute;
+        top: 70px;
+        left: 0;
+        display: none;
+
+}
+.nav3 ul ul li{
+    background-color: white;
+    border-bottom: 1px solid var(--primary);
+}
+.nav3 ul li:hover>ul{
+    display: block;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Silkscreen&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.outer-box {
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.inner-box {
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+    padding: 20px 40px;
+    /* background-color: #ffffff09; */
+    background: linear-gradient(to top left, #ffffffff, #ffffff33);
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px #2773a5;
+    /* border: 2px solid black; */
+    z-index: 2;
+}
+
+.signup-header h1 {
+    font-size: 2.5rem;
+    color: #212121;
+}
+
+.signup-header p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-top: 5px;
+}
+
+.signup-body {
+    margin: 20px 0;
+}
+
+.signup-body p {
+    margin: 10px 0;
+}
+
+.signup-body p label {
+    display: block;
+    font-weight: bold;
+}
+
+.signup-body p input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #cccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-top: 4px;
+}
+
+.signup-body p input[type="submit"] {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.signup-body p input[type="submit"]:hover {
+    background-color: #2773a5;
+}
+
+.signup-footer p {
+    color: #555;
+    text-align: center;
+}
+
+.signup-footer p a {
+    color: #2773a5;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background: linear-gradient(to top right, #ffffff33, #ffffffff);
+    position: absolute;
+}
+
+.c1 {
+    top: 100px;
+    left: 30%;
+}
+
+.c2 {
+    bottom: 200px;
+    right: 40%;
+}
